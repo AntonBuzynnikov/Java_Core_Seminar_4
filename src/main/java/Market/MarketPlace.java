@@ -37,26 +37,26 @@ public class MarketPlace {
     }
 
     public static void main(String[] args) {
-//        Map<Integer, List<Object>> info = new HashMap<>();
-//        info.put(0,List.of(customerService.getAll().get(0),productService.getAll().get(3), 4));
-//        info.put(1,List.of(customerService.getAll().get(0),productService.getAll().get(3), 4));
-//        info.put(2,List.of(customerService.getAll().get(0),productService.getAll().get(3), 4));
-//        info.put(3,List.of(customerService.getAll().get(0),productService.getAll().get(3), -5));
-//        info.put(4,List.of(customerService.getAll().get(0),productService.getAll().get(3), 90));
-//        info.put(5,List.of(new Customer("Михаил",30,"78888888888", Gender.MALE),productService.getAll().get(3), 4));
-//        info.put(6,List.of(customerService.getAll().get(0),new Product("Компьютер",50000.0), 4));
-//        info.put(7,List.of(new Customer("Афанасий",65,"79999998888",Gender.MALE),new Product("Компьютер",50000.0), -1));
-//        for(List<Object> o: info.values()) {
-//            try {
-//                addToOrders((Customer) o.get(0), (Product) o.get(1), (Integer) o.get(2));
-//            } catch (CountException e) {
-//                System.out.println(e.getMessage());
-//            } catch (CustomerException e) {
-//                System.out.println(e.getMessage());
-//            } catch (ProductException e) {
-//                System.out.println(e.getMessage());
-//            }
-//        }
+        Map<Integer, List<Object>> info = new HashMap<>();
+        info.put(0,List.of(customerService.getAll().get(0),productService.getAll().get(3), 4));
+        info.put(1,List.of(customerService.getAll().get(0),productService.getAll().get(3), 4));
+        info.put(2,List.of(customerService.getAll().get(0),productService.getAll().get(3), 4));
+        info.put(3,List.of(customerService.getAll().get(0),productService.getAll().get(3), -5));
+        info.put(4,List.of(customerService.getAll().get(0),productService.getAll().get(3), 90));
+        info.put(5,List.of(new Customer("Михаил",30,"78888888888", Gender.MALE),productService.getAll().get(3), 4));
+        info.put(6,List.of(customerService.getAll().get(0),new Product("Компьютер",50000.0), 4));
+        info.put(7,List.of(new Customer("Афанасий",65,"79999998888",Gender.MALE),new Product("Компьютер",50000.0), -1));
+        for(List<Object> o: info.values()) {
+            try {
+                addToOrders((Customer) o.get(0), (Product) o.get(1), (Integer) o.get(2));
+            } catch (CountException e) {
+                System.out.println(e.getMessage());
+            } catch (CustomerException e) {
+                System.out.println(e.getMessage());
+            } catch (ProductException e) {
+                System.out.println(e.getMessage());
+            }
+        }
 
         CongratService.congratulation(1,1,customerService);
         CongratService.congratulation(23,2,customerService);
